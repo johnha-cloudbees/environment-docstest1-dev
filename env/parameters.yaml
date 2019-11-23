@@ -1,0 +1,10 @@
+adminUser:
+  password: vault:docstest1/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: jha@cloudbees.com
+  token: vault:docstest1/pipelineUser:token
+  username: jhadev1-bot
+prow:
+  hmacToken: vault:docstest1/prow:hmacToken

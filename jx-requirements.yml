@@ -1,38 +1,75 @@
 autoUpdate:
   enabled: false
   schedule: ""
+bootConfigURL: https://github.com/jhadev1-bot/environment-docstest1-dev
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: true
-  project: ""
   azure: {}
+  clusterName: docstest1
+  environmentGitOwner: johnha-cloudbees
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: jhadocs1
   provider: gke
-  zone: ""
-gitops: true
+  registry: gcr.io
+  zone: us-east1-b
 environments:
-  - key: dev
-  - key: staging
-  - key: production
+- ingress:
+    domain: 35.237.189.123.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
 ingress:
-  domain: ""
+  domain: 35.237.189.123.nip.io
   externalDNS: false
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: vault
 storage:
+  backup:
+    enabled: false
+    url: ""
   logs:
     enabled: true
-    url: ""
+    url: gs://docstest1-logs-df404933-a97e-47bb-ad3f-6a136ea3634f
   reports:
     enabled: true
-    url: ""
+    url: gs://docstest1-reports-b8133b50-9a25-45ef-9175-9af30663fe2f
   repository:
     enabled: true
-    url: ""
+    url: gs://docstest1-repository-d1b662c0-2df3-4ab2-afb7-fdb6c74838
+vault: {}
+velero: {}
 versionStream:
   ref: 2.0.1005-cjxd5-SNAPSHOT-66
   url: https://github.com/cloudbees/cloudbees-jenkins-x-versions.git
