@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: johnha-cloudbees
+  repo: acmenodehttp
+  url: https://github.com/johnha-cloudbees/acmenodehttp.git
+  version: ""
+  versionURL: ""

@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: johnha-cloudbees
+    provider: github
+    repository: acmenodehttp
+  name: johnha-cloudbees-acmenodehttp
+spec:
+  description: Imported application for johnha-cloudbees/acmenodehttp
+  httpCloneURL: https://github.com/johnha-cloudbees/acmenodehttp.git
+  org: johnha-cloudbees
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: acmenodehttp
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/johnha-cloudbees/acmenodehttp.git
