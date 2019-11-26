@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/johnha-cloudbees/acmenodehttp.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: johnha-cloudbees
+  repo: acmegolang
+  url: https://github.com/johnha-cloudbees/acmegolang.git
+  version: ""
+  versionURL: ""
