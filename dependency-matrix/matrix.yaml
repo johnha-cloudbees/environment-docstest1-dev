@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/johnha-cloudbees/acmegolang.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: johnha-cloudbees
+  repo: acmeshoppingcart
+  url: https://github.com/johnha-cloudbees/acmeshoppingcart.git
+  version: ""
+  versionURL: ""
